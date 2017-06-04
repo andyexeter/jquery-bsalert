@@ -1,6 +1,6 @@
 [//]: # (Do not edit README.md as it is automatically generated from src/README.tpl.md)
 
-# jQuery Bootstrap Alerts v0.9.2
+# jQuery Bootstrap Alerts v0.9.3
 
 [![Build status](https://img.shields.io/travis/andyexeter/jquery-bsalert.svg)](https://travis-ci.org/andyexeter/jquery-bsalert)
 [![npm version](https://img.shields.io/npm/v/jquery-bsalert.svg)](https://www.npmjs.com/package/jquery-bsalert)
@@ -12,14 +12,14 @@ jQuery plugin to programatically display boostrap alerts
 ## Installation
 
 #### Download
-* [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsalert@0.9.2/dist/jquery.bsAlert.min.js) (2.1kB, 974B gzipped)
-* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@0.9.2/dist/jquery.bsAlert.js)  (3.46kB, 1.33kB gzipped)
+* [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsalert@0.9.3/dist/jquery.bsAlert.min.js) (2.1kB, 975B gzipped)
+* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@0.9.3/dist/jquery.bsAlert.js)  (3.46kB, 1.33kB gzipped)
 
 #### CDN
 ```html
-<script src="https://unpkg.com/jquery-bsalert@0.9.2/dist/jquery.bsAlert.min.js"></script>
+<script src="https://unpkg.com/jquery-bsalert@0.9.3/dist/jquery.bsAlert.min.js"></script>
 <!-- OR -->
-<script src="https://unpkg.com/jquery-bsalert@0.9.2/dist/jquery.bsAlert.js"></script>
+<script src="https://unpkg.com/jquery-bsalert@0.9.3/dist/jquery.bsAlert.js"></script>
 ```
 
 #### Package Managers
@@ -38,7 +38,7 @@ $ bower install jquery-bsalert --save
 #### Standard Usage
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="https://unpkg.com/jquery-bsalert@0.9.2/dist/jquery.bsAlert.min.js"></script>
+<script src="https://unpkg.com/jquery-bsalert@0.9.3/dist/jquery.bsAlert.min.js"></script>
 
 <script>
 // When the DOM is loaded
