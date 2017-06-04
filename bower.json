@@ -1,0 +1,28 @@
+{
+  "name": "jquery-bsAlert",
+  "description": "jQuery plugin to programatically display boostrap alerts",
+  "main": "dist/jquery.grouprequired.js",
+  "authors": [
+    "Andy Palmer <andy@andypalmer.me>"
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ],
+  "keywords": [
+    "javascript",
+    "jquery",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ]
+}
