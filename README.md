@@ -1,36 +1,36 @@
 [//]: # (Do not edit README.md as it is automatically generated from src/README.tpl.md)
 
-# jQuery Bootstrap Alerts v0.9.1
+# jQuery Bootstrap Alerts v0.9.2
 
-[![Build status](https://img.shields.io/travis/andyexeter/jquery-bsAlert.svg)](https://travis-ci.org/andyexeter/jquery-bsAlert)
-[![npm version](https://img.shields.io/npm/v/jquery-bsAlert.svg)](https://www.npmjs.com/package/jquery-bsAlert)
-![Bower version](https://img.shields.io/bower/v/jquery-bsAlert.svg)
-[![devDependency Status](https://img.shields.io/david/dev/andyexeter/jquery-bsAlert.svg)](https://david-dm.org/andyexeter/jquery-bsAlert#info=devDependencies)
+[![Build status](https://img.shields.io/travis/andyexeter/jquery-bsalert.svg)](https://travis-ci.org/andyexeter/jquery-bsalert)
+[![npm version](https://img.shields.io/npm/v/jquery-bsalert.svg)](https://www.npmjs.com/package/jquery-bsalert)
+![Bower version](https://img.shields.io/bower/v/jquery-bsalert.svg)
+[![devDependency Status](https://img.shields.io/david/dev/andyexeter/jquery-bsalert.svg)](https://david-dm.org/andyexeter/jquery-bsalert#info=devDependencies)
 
 jQuery plugin to programatically display boostrap alerts
 
 ## Installation
 
 #### Download
-* [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsAlert@0.9.1/dist/jquery.bsAlert.min.js) (2.1kB, 973B gzipped)
-* [jquery.bsAlert.js](https://unpkg.com/jquery-bsAlert@0.9.1/dist/jquery.bsAlert.js)  (3.46kB, 1.33kB gzipped)
+* [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsalert@0.9.2/dist/jquery.bsAlert.min.js) (2.1kB, 974B gzipped)
+* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@0.9.2/dist/jquery.bsAlert.js)  (3.46kB, 1.33kB gzipped)
 
 #### CDN
 ```html
-<script src="https://unpkg.com/jquery-bsAlert@0.9.1/dist/jquery.bsAlert.min.js"></script>
+<script src="https://unpkg.com/jquery-bsalert@0.9.2/dist/jquery.bsAlert.min.js"></script>
 <!-- OR -->
-<script src="https://unpkg.com/jquery-bsAlert@0.9.1/dist/jquery.bsAlert.js"></script>
+<script src="https://unpkg.com/jquery-bsalert@0.9.2/dist/jquery.bsAlert.js"></script>
 ```
 
 #### Package Managers
 Install via NPM:
 ```sh
-$ npm install jquery-bsAlert --save
+$ npm install jquery-bsalert --save
 ```
 
 Install via Bower:
 ```sh
-$ bower install jquery-bsAlert --save
+$ bower install jquery-bsalert --save
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ $ bower install jquery-bsAlert --save
 #### Standard Usage
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="https://unpkg.com/jquery-bsAlert@0.9.1/dist/jquery.bsAlert.min.js"></script>
+<script src="https://unpkg.com/jquery-bsalert@0.9.2/dist/jquery.bsAlert.min.js"></script>
 
 <script>
 // When the DOM is loaded
@@ -63,12 +63,12 @@ $(function() {
 
 #### Browserify
 ```sh
-$ npm install jquery-bsAlert --save
+$ npm install jquery-bsalert --save
 ```
 
 ```js
 var $ = require('jquery');
-require('jquery-bsAlert');
+require('jquery-bsalert');
 
 $('#form').bsAlert('warning', 'Alert');
 ```
