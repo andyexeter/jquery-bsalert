@@ -1,5 +1,5 @@
 {
-  "name": "jquery-bsAlert",
+  "name": "jquery-bsalert",
   "description": "jQuery plugin to programatically display boostrap alerts",
   "main": "dist/jquery.grouprequired.js",
   "authors": [
