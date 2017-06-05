@@ -44,18 +44,18 @@ $ bower install jquery-bsalert --save
 // When the DOM is loaded
 $(function() {
     if(someCheck) {
-    	$('#form').bsAlert('success', 'It was successful!');
+        $('#form').bsAlert('success', 'It was successful!');
     } else {
         $('#form').bsAlert('danger', 'Check form fields!');
     }
     
     // With all options and their default values
     $('#form').bsAlert({
-		type: 'success',
-		content: 'Thanks for contacting us!',
-		clear: true, // Clear previous alerts (default)
-		dismissible: true, // Make alert dismissible
-		position: 'default' // 'default' causes alert to appear before the element. Can also accept 'after', or a function to position manually 
+        type: 'success',
+        content: 'Thanks for contacting us!',
+        clear: true, // Clear previous alerts (default)
+        dismissible: true, // Make alert dismissible
+        position: 'default' // 'default' causes alert to appear before the element. Can also accept 'after', or a function to position manually 
     });
 });
 </script>
@@ -88,24 +88,24 @@ for custom positioning.
 Using the `position` option as a function:
 ```js
 $('#form').bsAlert({
-	// 'this' is bound to the plugin instance
-	position: function($alert) {
-	    $alert.appendTo('.container');
-	}
+    // 'this' is bound to the plugin instance
+    position: function($alert) {
+        $alert.appendTo('.container');
+    }
 });
 ```
 
 Using the `content` option as a function:
 ```js
 $('#form').bsAlert({
-	// 'this' is bound to the plugin instance
-	content: function() {
-	    if(this.options.dismissible) {
-	        return 'This is a dismissible alert';
-	    }
-	    
-	    return 'This is not a dismissible alert';
-	}
+    // 'this' is bound to the plugin instance
+    content: function() {
+        if(this.options.dismissible) {
+            return 'This is a dismissible alert';
+        }
+        
+        return 'This is not a dismissible alert';
+    }
 });
 ```
 
