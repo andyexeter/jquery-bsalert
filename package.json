@@ -1,7 +1,7 @@
 {
   "name": "jquery-bsalert",
   "title": "jQuery Bootstrap Alerts",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "jQuery plugin to programatically display boostrap alerts",
   "main": "dist/jquery.bsAlert",
   "author": "Andy Palmer <andy@andypalmer.me>",
