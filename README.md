@@ -6,13 +6,13 @@
 [![npm version](https://img.shields.io/npm/v/jquery-bsalert.svg)](https://www.npmjs.com/package/jquery-bsalert)
 [![devDependency Status](https://img.shields.io/david/dev/andyexeter/jquery-bsalert.svg)](https://david-dm.org/andyexeter/jquery-bsalert#info=devDependencies)
 
-jQuery plugin to programatically display boostrap alerts
+jQuery plugin to programmatically display bootstrap alerts
 
 ## Installation
 
 #### Download
-* [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsalert@0.9.4/dist/jquery.bsAlert.min.js) (2.08kB, 966B gzipped)
-* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@0.9.4/dist/jquery.bsAlert.js)  (3.45kB, 1.32kB gzipped)
+* [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsalert@0.9.4/dist/jquery.bsAlert.min.js) (1.98kB, 877B gzipped)
+* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@0.9.4/dist/jquery.bsAlert.js)  (4.8kB, 1.39kB gzipped)
 
 #### CDN
 ```html

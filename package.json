@@ -1,36 +1,36 @@
 {
-  "name": "jquery-bsalert",
-  "title": "jQuery Bootstrap Alerts",
-  "version": "0.9.4",
-  "description": "jQuery plugin to programmatically display bootstrap alerts",
-  "main": "dist/jquery.bsAlert",
-  "author": "Andy Palmer <andy@andypalmer.me>",
-  "license": "MIT",
-  "dependencies": {
-    "jquery": ">=1.9"
-  },
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-qunit": "^3.0.1",
-    "grunt-contrib-uglify": "^4.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-includes": "^1.0.0",
-    "load-grunt-config": "^1.0.1",
-    "prettier": "^1.17.0",
-    "qunitjs": "^2.1.0"
-  },
-  "files": [
-    "dist",
-    "src",
-    "Gruntfile.js"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/andyexeter/jquery-bsalert"
-  },
-  "keywords": [
-    "jquery",
-    "jquery-plugin",
-    "ecosystem:jquery"
-  ]
+    "name": "jquery-bsalert",
+    "title": "jQuery Bootstrap Alerts",
+    "version": "0.9.4",
+    "description": "jQuery plugin to programmatically display bootstrap alerts",
+    "main": "dist/jquery.bsAlert",
+    "author": "Andy Palmer <andy@andypalmer.me>",
+    "license": "MIT",
+    "dependencies": {
+        "jquery": ">=1.9"
+    },
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-contrib-qunit": "^3.0.1",
+        "grunt-contrib-uglify": "^4.0.0",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-includes": "^1.0.0",
+        "load-grunt-config": "^1.0.1",
+        "prettier": "^1.17.0",
+        "qunitjs": "^2.1.0"
+    },
+    "files": [
+        "dist",
+        "src",
+        "Gruntfile.js"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/andyexeter/jquery-bsalert"
+    },
+    "keywords": [
+        "jquery",
+        "jquery-plugin",
+        "ecosystem:jquery"
+    ]
 }

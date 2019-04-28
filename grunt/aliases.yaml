@@ -1,10 +1,10 @@
 default:
-  - 'dist'
-  - 'readme'
+    - 'dist'
+    - 'readme'
 
 dist:
-  - 'includes:dist'
-  - 'uglify:dist'
+    - 'includes:dist'
+    - 'uglify:dist'
 
 test:
-  - 'qunit'
+    - 'qunit'
