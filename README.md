@@ -22,7 +22,7 @@ jQuery plugin to programmatically display bootstrap alerts
 ```
 
 #### Package Managers
-Install via Bower:
+Install via yarn:
 ```sh
 $ yarn add jquery-bsalert
 ```

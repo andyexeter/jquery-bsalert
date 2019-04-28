@@ -22,7 +22,7 @@
 ```
 
 #### Package Managers
-Install via Bower:
+Install via yarn:
 ```sh
 $ yarn add <%= pkg.name %>
 ```
