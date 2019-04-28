@@ -1,5 +1,5 @@
 /**
- * jquery-bsalert v0.9.4
+ * jquery-bsalert v1.0.0
  *
  * @author Andy Palmer <andy@andypalmer.me>
  * @license MIT
