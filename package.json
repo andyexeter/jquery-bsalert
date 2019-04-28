@@ -2,20 +2,20 @@
   "name": "jquery-bsalert",
   "title": "jQuery Bootstrap Alerts",
   "version": "0.9.4",
-  "description": "jQuery plugin to programatically display boostrap alerts",
+  "description": "jQuery plugin to programmatically display bootstrap alerts",
   "main": "dist/jquery.bsAlert",
   "author": "Andy Palmer <andy@andypalmer.me>",
   "license": "MIT",
   "dependencies": {
-    "jquery": "*"
+    "jquery": ">=1.9"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-contrib-qunit": "^1.2.0",
-    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-qunit": "^3.0.1",
+    "grunt-contrib-uglify": "^4.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-includes": "^1.0.0",
-    "load-grunt-config": "^0.19.2",
+    "load-grunt-config": "^1.0.1",
     "prettier": "^1.17.0",
     "qunitjs": "^2.1.0"
   },
