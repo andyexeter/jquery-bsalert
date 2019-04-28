@@ -5,8 +5,6 @@ default:
 dist:
   - 'includes:dist'
   - 'uglify:dist'
-  - 'jshint:dist'
-  - 'jscs:dist'
 
 test:
   - 'qunit'
