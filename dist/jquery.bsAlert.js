@@ -21,13 +21,13 @@
     /* jshint unused: vars */
     "use strict";
 
+    var instances = [];
+
     var pluginName = "bsAlert";
 
     var publicAPI = {
         destroy: function() {
             this.clear();
-
-            this.$el.removeData(pluginName);
         },
 
         show: function() {
@@ -134,7 +134,7 @@
     $.fn[pluginName] = function() {
         var args = arguments;
 
-        return this.each(function() {
+        return this.each(function(i) {
             if (
                 args.length === 2 &&
                 typeof args[0] === "string" &&
@@ -146,17 +146,17 @@
                 };
             }
 
-            var instances = $(this).data(pluginName) || [];
-
-            instances.push(new Plugin(this, args[0]));
-
-            $(this).data(pluginName, instances);
-
-            if (typeof args[0] === "string" && $.isFunction(publicAPI[args[0]])) {
+            if (
+                instances[i] &&
+                typeof args[0] === "string" &&
+                $.isFunction(publicAPI[args[0]])
+            ) {
                 publicAPI[args[0]].apply(
-                    instances[0],
+                    instances[i],
                     Array.prototype.slice.call(args, 1)
                 );
+            } else {
+                instances[i] = new Plugin(this, args[0]);
             }
         });
     };
