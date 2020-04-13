@@ -69,7 +69,7 @@
             $alert
                 .attr("role", "alert")
                 .addClass("alert alert-" + this.options.type)
-                .append(" " + this.getContent(this.options.content));
+                .append(document.createTextNode(this.getContent(this.options.content)));
 
             if (this.options.icons && this.options.icons[this.options.type]) {
                 var $icon = $("<span />").addClass(

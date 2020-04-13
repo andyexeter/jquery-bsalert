@@ -11,8 +11,8 @@ jQuery plugin to programmatically display bootstrap alerts
 ## Installation
 
 #### Download
-* [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsalert@1.0.0/dist/jquery.bsAlert.min.js) (2.07kB, 948B gzipped)
-* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@1.0.0/dist/jquery.bsAlert.js)  (4.8kB, 1.39kB gzipped)
+* [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsalert@1.0.0/dist/jquery.bsAlert.min.js) (2.09kB, 960B gzipped)
+* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@1.0.0/dist/jquery.bsAlert.js)  (4.82kB, 1.4kB gzipped)
 
 #### CDN
 ```html
@@ -117,7 +117,7 @@ $.fn.bsAlert.dismissible = true;
 ## License
 
 The MIT License (MIT)
-Copyright (c) 2019 [The jQuery Bootstrap Alerts authors](https://github.com/andyexeter/jquery-bsalert/graphs/contributors)
+Copyright (c) 2020 [The jQuery Bootstrap Alerts authors](https://github.com/andyexeter/jquery-bsalert/graphs/contributors)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
