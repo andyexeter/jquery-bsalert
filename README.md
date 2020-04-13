@@ -12,7 +12,7 @@ jQuery plugin to programmatically display bootstrap alerts
 
 #### Download
 * [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsalert@1.0.1/dist/jquery.bsAlert.min.js) (2.03kB, 947B gzipped)
-* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@1.0.1/dist/jquery.bsAlert.js)  (4.79kB, 1.39kB gzipped)
+* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@1.0.1/dist/jquery.bsAlert.js)  (4.83kB, 1.39kB gzipped)
 
 #### CDN
 ```html

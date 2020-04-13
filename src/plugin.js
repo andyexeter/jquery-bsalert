@@ -5,11 +5,11 @@ var instances = [];
 var pluginName = "bsAlert";
 
 var publicAPI = {
-    destroy: function() {
+    destroy: function () {
         this.clear();
     },
 
-    show: function() {
+    show: function () {
         if ($.isFunction(this.options.position)) {
             this.options.position.call(this, this.getAlert());
         } else {
@@ -24,7 +24,7 @@ var publicAPI = {
         }
     },
 
-    clear: function() {
+    clear: function () {
         var instances = this.$el.data(pluginName) || [];
 
         for (var i = 0; i < instances.length; i++) {
@@ -34,7 +34,7 @@ var publicAPI = {
 };
 
 var privateAPI = {
-    init: function() {
+    init: function () {
         if (this.options.clear) {
             this.clear();
         }
@@ -42,13 +42,15 @@ var privateAPI = {
         this.show();
     },
 
-    getAlert: function() {
+    getAlert: function () {
         var $alert = $("<div />");
 
         $alert
             .attr("role", "alert")
             .addClass("alert alert-" + this.options.type)
-            .append(document.createTextNode(this.getContent(this.options.content)));
+            .append(
+                document.createTextNode(this.getContent(this.options.content))
+            );
 
         if (this.options.icons && this.options.icons[this.options.type]) {
             var $icon = $("<span />").addClass(
@@ -78,7 +80,7 @@ var privateAPI = {
         return $alert;
     },
 
-    getContent: function(arg) {
+    getContent: function (arg) {
         var _this = this,
             content = "";
 
@@ -87,7 +89,7 @@ var privateAPI = {
                 content = arg.call(_this);
                 break;
             case "object":
-                $.each(arg, function(i, part) {
+                $.each(arg, function (i, part) {
                     content += this.getContent(part);
                 });
                 break;
@@ -110,10 +112,10 @@ function Plugin(element, options) {
 
 Plugin.prototype = $.extend({}, publicAPI, privateAPI);
 
-$.fn[pluginName] = function() {
+$.fn[pluginName] = function () {
     var args = arguments;
 
-    return this.each(function(i) {
+    return this.each(function (i) {
         if (
             args.length === 2 &&
             typeof args[0] === "string" &&

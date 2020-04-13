@@ -1,4 +1,4 @@
-(function(factory) {
+(function (factory) {
     // Universal Module Definition
     /* jshint strict: false */
     if (typeof define === "function" && define.amd) {
@@ -11,7 +11,7 @@
         // Browser globals
         factory(jQuery);
     }
-})(function($) {
+})(function ($) {
     /* jshint unused: vars */
     // include "plugin.js"
 });
