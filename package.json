@@ -10,13 +10,13 @@
         "jquery": ">=1.9"
     },
     "devDependencies": {
-        "grunt": "^1.0.1",
+        "grunt": "^1.1.0",
         "grunt-contrib-qunit": "^3.0.1",
         "grunt-contrib-uglify": "^4.0.0",
         "grunt-contrib-watch": "^1.0.0",
         "grunt-includes": "^1.0.0",
-        "load-grunt-config": "^1.0.1",
-        "prettier": "^1.17.0",
+        "load-grunt-config": "^3.0.1",
+        "prettier": "^2.0.4",
         "qunitjs": "^2.1.0"
     },
     "files": [
