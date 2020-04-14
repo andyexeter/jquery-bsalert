@@ -25,8 +25,6 @@ var publicAPI = {
     },
 
     clear: function () {
-        var instances = this.$el.data(pluginName) || [];
-
         for (var i = 0; i < instances.length; i++) {
             instances[i].$alert.remove();
         }
