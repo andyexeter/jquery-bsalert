@@ -6,7 +6,7 @@
     "main": "dist/jquery.bsAlert",
     "author": "Andy Palmer <andy@andypalmer.me>",
     "license": "MIT",
-    "dependencies": {
+    "peerDependencies": {
         "jquery": ">=1.9"
     },
     "devDependencies": {
