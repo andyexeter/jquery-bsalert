@@ -29,5 +29,5 @@ form input[type=text], form input[type=tel] {
 script.code-sample {
     display: block;
     white-space: pre;
-    font-family: monospace
+    font-family: monospace;
 }
