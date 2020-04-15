@@ -12,7 +12,7 @@
         define(["jquery"], factory);
     } else if (typeof module === "object" && module.exports) {
         // Node/CommonJS
-        module.exports = factory;
+        module.exports = factory(require("jquery"));
     } else {
         // Browser globals
         factory(jQuery);
@@ -29,14 +29,14 @@
     var publicAPI = {
         destroy: function () {
             this.clear();
-            delete instances[this.$el.data(pluginName + '.id')];
-            this.$el.removeData(pluginName + '.id');
+            delete instances[this.$el.data(pluginName + ".id")];
+            this.$el.removeData(pluginName + ".id");
         },
 
         show: function () {
             if ($.isFunction(this.options.position)) {
                 this.options.position.call(this, this.getAlert());
-            } else if (this.options.position === 'after') {
+            } else if (this.options.position === "after") {
                 this.$el.after(this.getAlert());
             } else {
                 this.$el.before(this.getAlert());
@@ -44,7 +44,7 @@
         },
 
         clear: function () {
-            instances[this.$el.data(pluginName + '.id')].$alert.remove();
+            instances[this.$el.data(pluginName + ".id")].$alert.remove();
         }
     };
 
@@ -55,14 +55,10 @@
             $alert
                 .attr("role", "alert")
                 .addClass("alert alert-" + this.options.type)
-                .append(
-                    document.createTextNode(' ' + this.getContent(this.options.content))
-                );
+                .append(document.createTextNode(" " + this.getContent(this.options.content)));
 
             if (this.options.icons && this.options.icons[this.options.type]) {
-                var $icon = $("<span />").addClass(
-                    this.options.icons[this.options.type]
-                );
+                var $icon = $("<span />").addClass(this.options.icons[this.options.type]);
 
                 $alert.prepend($icon);
             }
@@ -97,7 +93,7 @@
         this.$alert = null;
         this.options = $.extend({}, $.fn[pluginName].defaults, options);
 
-        this.$el.data(pluginName + '.id', instanceId);
+        this.$el.data(pluginName + ".id", instanceId);
 
         this.show();
     }
@@ -107,9 +103,9 @@
     $.fn[pluginName] = function () {
         var args = arguments;
 
-        var instanceId = this.data(pluginName + '.id');
+        var instanceId = this.data(pluginName + ".id");
 
-        if (typeof instanceId === 'undefined') {
+        if (typeof instanceId === "undefined") {
             instanceId = ++instanceIdCounter;
         }
 
@@ -121,8 +117,8 @@
             instances[instanceId].destroy();
         }
 
-        if (typeof args[0] !== 'object') {
-            args[0] = {type: args[0], content: args[1]};
+        if (typeof args[0] !== "object") {
+            args[0] = { type: args[0], content: args[1] };
         }
 
         instances[instanceId] = new Plugin(this, args[0], instanceId);

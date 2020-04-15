@@ -11,8 +11,8 @@ jQuery plugin to programmatically display bootstrap alerts
 ## Installation
 
 #### Download
-* [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsalert@1.0.3/dist/jquery.bsAlert.min.js) (1.92kB, 913B gzipped)
-* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@1.0.3/dist/jquery.bsAlert.js)  (4.12kB, 1.31kB gzipped)
+* [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsalert@1.0.3/dist/jquery.bsAlert.min.js) (1.94kB, 923B gzipped)
+* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@1.0.3/dist/jquery.bsAlert.js)  (4.07kB, 1.31kB gzipped)
 
 #### CDN
 ```html
@@ -40,44 +40,40 @@ $ npm install jquery-bsalert --save
 <script src="https://unpkg.com/jquery-bsalert@1.0.3/dist/jquery.bsAlert.min.js"></script>
 
 <script>
-// When the DOM is loaded
 $(function() {
     if(someCheck) {
         $('#form').bsAlert('success', 'It was successful!');
     } else {
         $('#form').bsAlert('danger', 'Check form fields!');
     }
-    
+
     // With all options and their default values
     $('#form').bsAlert({
         type: 'success',
         content: 'Thanks for contacting us!',
-        clear: true, // Clear previous alerts (default)
         dismissible: true, // Make alert dismissible
-        position: 'default' // 'default' causes alert to appear before the element. Can also accept 'after', or a function to position manually 
+        position: 'default' // 'default' causes alert to appear before the element. Can also accept 'after', or a function to position manually
     });
 });
 </script>
 ```
 
-#### Browserify
+#### Webpack / Browserify
 ```sh
-$ npm install jquery-bsalert --save
+$ yarn add jquery-bsalert
 ```
 
 ```js
 var $ = require('jquery');
 require('jquery-bsalert');
 
-$('#form').bsAlert('warning', 'Alert');
+$('#form').bsAlert('warning', 'This is a warning');
 ```
 
 ## Options
 `type` - The type of alert. See http://getbootstrap.com/components/#alerts for the different types allowed. Defaults to 'danger'.
 
 `content` - The alert's text or html content. Can also be a function, see below for an example.
-
-`clear` - Whether to clear any previous alert on the same element. Defaults to `true`.
 
 `dismissible` - Whether the alert should be dismissible by the user. Defaults to `false`.
 
@@ -102,7 +98,7 @@ $('#form').bsAlert({
         if(this.options.dismissible) {
             return 'This is a dismissible alert';
         }
-        
+
         return 'This is not a dismissible alert';
     }
 });
