@@ -40,29 +40,27 @@ $ npm install <%= pkg.name %> --save
 <script src="https://unpkg.com/<%= pkg.name %>@<%= pkg.version %>/dist/<%= files.min.name %>"></script>
 
 <script>
-// When the DOM is loaded
 $(function() {
     if(someCheck) {
         $('#form').bsAlert('success', 'It was successful!');
     } else {
         $('#form').bsAlert('danger', 'Check form fields!');
     }
-    
-    // With all options and their default values
+
+    // With all options
     $('#form').bsAlert({
         type: 'success',
         content: 'Thanks for contacting us!',
-        clear: true, // Clear previous alerts (default)
-        dismissible: true, // Make alert dismissible
-        position: 'default' // 'default' causes alert to appear before the element. Can also accept 'after', or a function to position manually 
+        dismissible: true,
+        position: 'before'
     });
 });
 </script>
 ```
 
-#### Browserify
+#### Webpack and Browserify
 ```sh
-$ npm install <%= pkg.name %> --save
+$ yarn add <%= pkg.name %>
 ```
 
 ```js
@@ -73,16 +71,12 @@ $('#form').bsAlert('warning', 'Alert');
 ```
 
 ## Options
-`type` - The type of alert. See http://getbootstrap.com/components/#alerts for the different types allowed. Defaults to 'danger'.
-
-`content` - The alert's text or html content. Can also be a function, see below for an example.
-
-`clear` - Whether to clear any previous alert on the same element. Defaults to `true`.
-
-`dismissible` - Whether the alert should be dismissible by the user. Defaults to `false`.
-
-`position` - Where to position the alert. 'default' appears before the form, 'after' appears after, or a function may be passed
-for custom positioning.
+| Option         | Type                   | Description                                                                                  | Default           |
+|----------------|------------------------|----------------------------------------------------------------------------------------------|-------------------|
+| type           | `string`               | Alert type. See http://getbootstrap.com/components/#alerts for the different types allowed.  | `danger`          |
+| content        | `string` or `function` | The alert's text or html content. Can also be a function, see below for an example..         | `''`              |
+| dismissible    | `boolean`              | Whether the alert can be dismissed. Displays a close button if true                          | `false`           |
+| position       | `string` or `function` | Where to position the alert. Valid options are 'before', 'after', or a function.             | `before`          |
 
 Using the `position` option as a function:
 ```js
@@ -102,7 +96,7 @@ $('#form').bsAlert({
         if(this.options.dismissible) {
             return 'This is a dismissible alert';
         }
-        
+
         return 'This is not a dismissible alert';
     }
 });

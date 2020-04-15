@@ -11,8 +11,8 @@ jQuery plugin to programmatically display bootstrap alerts
 ## Installation
 
 #### Download
-* [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsalert@1.0.3/dist/jquery.bsAlert.min.js) (1.94kB, 923B gzipped)
-* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@1.0.3/dist/jquery.bsAlert.js)  (4.07kB, 1.31kB gzipped)
+* [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsalert@1.0.3/dist/jquery.bsAlert.min.js) (1.93kB, 920B gzipped)
+* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@1.0.3/dist/jquery.bsAlert.js)  (4.05kB, 1.31kB gzipped)
 
 #### CDN
 ```html
@@ -47,18 +47,18 @@ $(function() {
         $('#form').bsAlert('danger', 'Check form fields!');
     }
 
-    // With all options and their default values
+    // With all options
     $('#form').bsAlert({
         type: 'success',
         content: 'Thanks for contacting us!',
-        dismissible: true, // Make alert dismissible
-        position: 'default' // 'default' causes alert to appear before the element. Can also accept 'after', or a function to position manually
+        dismissible: true,
+        position: 'before'
     });
 });
 </script>
 ```
 
-#### Webpack / Browserify
+#### Webpack and Browserify
 ```sh
 $ yarn add jquery-bsalert
 ```
@@ -67,18 +67,16 @@ $ yarn add jquery-bsalert
 var $ = require('jquery');
 require('jquery-bsalert');
 
-$('#form').bsAlert('warning', 'This is a warning');
+$('#form').bsAlert('warning', 'Alert');
 ```
 
 ## Options
-`type` - The type of alert. See http://getbootstrap.com/components/#alerts for the different types allowed. Defaults to 'danger'.
-
-`content` - The alert's text or html content. Can also be a function, see below for an example.
-
-`dismissible` - Whether the alert should be dismissible by the user. Defaults to `false`.
-
-`position` - Where to position the alert. 'default' appears before the form, 'after' appears after, or a function may be passed
-for custom positioning.
+| Option         | Type                   | Description                                                                                  | Default           |
+|----------------|------------------------|----------------------------------------------------------------------------------------------|-------------------|
+| type           | `string`               | Alert type. See http://getbootstrap.com/components/#alerts for the different types allowed.  | `danger`          |
+| content        | `string` or `function` | The alert's text or html content. Can also be a function, see below for an example..         | `''`              |
+| dismissible    | `boolean`              | Whether the alert can be dismissed. Displays a close button if true                          | `false`           |
+| position       | `string` or `function` | Where to position the alert. Valid options are 'before', 'after', or a function.             | `before`          |
 
 Using the `position` option as a function:
 ```js
