@@ -125,11 +125,10 @@
     };
 
     $.fn[pluginName].defaults = {
-        type: "danger", // danger, warning, info, success
+        type: "danger", // one of danger, warning, info or success
         content: "",
-        clear: true,
         dismissible: false,
-        position: "default",
+        position: "before",
         icons: {
             danger: "fa fa-exclamation-circle",
             warning: "fa fa-question-circle",

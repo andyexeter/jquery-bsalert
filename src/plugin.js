@@ -107,7 +107,7 @@ $.fn[pluginName].defaults = {
     type: "danger", // one of danger, warning, info or success
     content: "",
     dismissible: false,
-    position: "default",
+    position: "before",
     icons: {
         danger: "fa fa-exclamation-circle",
         warning: "fa fa-question-circle",
