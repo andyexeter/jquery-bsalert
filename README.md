@@ -11,8 +11,8 @@ jQuery plugin to programmatically display bootstrap alerts
 ## Installation
 
 #### Download
-* [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsalert@1.0.3/dist/jquery.bsAlert.min.js) (1.93kB, 920B gzipped)
-* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@1.0.3/dist/jquery.bsAlert.js)  (4.05kB, 1.31kB gzipped)
+* [jquery.bsAlert.min.js](https://unpkg.com/jquery-bsalert@1.0.3/dist/jquery.bsAlert.min.js) (1.91kB, 911B gzipped)
+* [jquery.bsAlert.js](https://unpkg.com/jquery-bsalert@1.0.3/dist/jquery.bsAlert.js)  (4.01kB, 1.3kB gzipped)
 
 #### CDN
 ```html
@@ -52,7 +52,7 @@ $(function() {
         type: 'success',
         content: 'Thanks for contacting us!',
         dismissible: true,
-        position: 'before'
+        position: 'after'
     });
 });
 </script>
@@ -67,7 +67,7 @@ $ yarn add jquery-bsalert
 var $ = require('jquery');
 require('jquery-bsalert');
 
-$('#form').bsAlert('warning', 'Alert');
+$('#form').bsAlert('warning', 'This is a warning');
 ```
 
 ## Options

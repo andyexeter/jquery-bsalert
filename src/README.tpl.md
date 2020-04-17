@@ -52,7 +52,7 @@ $(function() {
         type: 'success',
         content: 'Thanks for contacting us!',
         dismissible: true,
-        position: 'before'
+        position: 'after'
     });
 });
 </script>
@@ -67,7 +67,7 @@ $ yarn add <%= pkg.name %>
 var $ = require('jquery');
 require('<%= pkg.name %>');
 
-$('#form').bsAlert('warning', 'Alert');
+$('#form').bsAlert('warning', 'This is a warning');
 ```
 
 ## Options

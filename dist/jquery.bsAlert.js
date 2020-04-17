@@ -29,8 +29,9 @@
     var publicAPI = {
         destroy: function () {
             this.clear();
-            delete instances[this.$el.data(pluginName + ".id")];
+            var instanceId = this.$el.data(pluginName + ".id");
             this.$el.removeData(pluginName + ".id");
+            delete instances[instanceId];
         },
 
         show: function () {
@@ -50,23 +51,17 @@
 
     var privateAPI = {
         getAlert: function () {
-            var $alert = $("<div />");
-
-            $alert
+            var $alert = $("<div />")
                 .attr("role", "alert")
                 .addClass("alert alert-" + this.options.type)
                 .append(document.createTextNode(" " + this.getContent(this.options.content)));
 
             if (this.options.icons && this.options.icons[this.options.type]) {
-                var $icon = $("<span />").addClass(this.options.icons[this.options.type]);
-
-                $alert.prepend($icon);
+                $alert.prepend($("<span />").addClass(this.options.icons[this.options.type]));
             }
 
             if (this.options.dismissible) {
-                $alert.addClass("alert-dismissible");
-
-                $alert.append(
+                $alert.addClass("alert-dismissible").append(
                     $("<button />")
                         .attr({
                             type: "button",
@@ -88,12 +83,11 @@
         }
     };
 
-    function Plugin(element, options, instanceId) {
-        this.$el = $(element);
+    function Plugin($element, options, instanceId) {
+        $element.data(pluginName + ".id", instanceId);
+        this.$el = $element;
         this.$alert = null;
         this.options = $.extend({}, $.fn[pluginName].defaults, options);
-
-        this.$el.data(pluginName + ".id", instanceId);
 
         this.show();
     }
